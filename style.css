@@ -16,7 +16,8 @@ body {
     position: relative;
     background-color: var(--secondary-color);
 }
-button{
+
+button {
     display: inline-block;
     border-style: none;
     transition: all 0.25s ease-in-out;
@@ -26,18 +27,20 @@ button{
     color: white;
     border: 1px solid rgb(32, 31, 31);
 }
-button:hover{
+
+button:hover {
     transform: translateY(2px);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    
-    
+
+
     cursor: pointer;
 }
+
 .left-header {
     color: white;
     letter-spacing: 2px;
     text-align: center;
-    background-color:var(--link-color);
+    background-color: var(--link-color);
 }
 
 .left-header {
@@ -138,7 +141,8 @@ button:hover{
 
 
 }
-#reset{
+
+#reset {
     position: absolute;
     top: 0;
     right: 10px;
@@ -149,42 +153,48 @@ button:hover{
     border-style: none;
     color: white;
     box-shadow: 1px 1px 3px black;
-    
+
 }
-#reset:hover{
+
+#reset:hover {
     transform: translateY(-14px);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    
+
     background-color: rgb(194, 86, 4);
     cursor: pointer;
 }
-.far{
+
+.far {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
     border-bottom: 1px solid black;
     padding-bottom: 8px;
 }
-.far:nth-of-type(3){
+
+.far:nth-of-type(3) {
     border-bottom: none;
 }
-input{
+
+input {
     display: inline-block;
     border-style: none;
     padding: 6px;
     border: 1px solid black;
     border-radius: 6px;
     color: black;
-    
+
 }
-label{
+
+label {
     margin-left: 4px;
     background-color: #1745505c;
     color: rgb(216, 205, 205);
     text-shadow: 1px 1px black;
     font-weight: bold;
-    
+
 }
+
 /* Standard syntax */
 @keyframes skyChange {
     0% {
@@ -441,5 +451,11 @@ label{
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .hero-section {
+        overflow: hidden;
     }
 }
