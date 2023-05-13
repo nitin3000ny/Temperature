@@ -31,10 +31,14 @@ document.getElementById('convert-from-kelvin').addEventListener("click", () => {
     if (isNaN(kvalue)) {
         alert("Enter numbers only");
     } else {
-        const fvalue = ((kvalue * 9 / 5) - 459.67).toFixed(2);
-        const cvalue = (kvalue - 273.15).toFixed(2);
-        fahrenheit.value = fvalue;
-        celsius.value = cvalue;
+        if (kvalue >= 0) {
+            const fvalue = ((kvalue * 9 / 5) - 459.67).toFixed(2);
+            const cvalue = (kvalue - 273.15).toFixed(2);
+            fahrenheit.value = fvalue;
+            celsius.value = cvalue;
+        } else {
+            alert("Kelvin value must be greater than 0");
+        }
     }
 });
 
